@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            text-align: center;
+            margin-top: 300px;
+            font: normal 20pt arial;
+            padding: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p id="res"></p>
+
+
+    <script>
+        var nome = window.prompt('Qual é seu nome? ')
+        var res = document.getElementById('res')
+
+        res.innerHTML = `
+            Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras. <br/>
+            Seu nome em maiúsculas é <strong>${nome.toUpperCase()}</strong>. <br/>
+            Seu nome em minúsculas é <strong>${nome.toLowerCase()}</strong>.
+        `
+        res.style.backgroundColor = 'blue'
+        res.style.borderRadius = "10px"
+        res.style.padding = "20px"
+
+       /* document.write(`Olá, <strong>${nome}</strong>! Seu nome tem  ${nome.length} letras. <br/>`)
+        document.write(` Seu nome em maiúculas é <strong>${nome.toUpperCase()}.</strong> <br/>`)
+        document.write(` Seu nome em minúsculas é <strong>${nome.toLowerCase()}.</strong`)
+         nome.style.backgroundColor = 'red'*/
+
+    </script>
+</body>
+</html>
